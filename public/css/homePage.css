@@ -1,0 +1,360 @@
+root { 
+    display: block;
+}
+
+.contactFont{
+    color:#605d60;
+    font-family: SimHei;
+    font-size: 20px  
+}
+.contactDiv{
+    margin-left: 50px;
+    height: 230px;
+}
+.topModDivWidthValue{
+    width: 800px;
+}
+.topBanner{
+    height: 60px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 655;
+    
+}
+.topFirstWordItalic{
+    color: #fccc04;
+    font-size: 15px;
+    font-family:SimHei;
+    font-style: italic;
+}
+.bannerAction{
+    text-align:center; 
+    line-height: 30px;
+    width: 100px;
+    height: 30px;
+    display:inline-block; 
+    margin-right: -5px;
+/*    border:2px solid grey;*/
+/*    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.15);*/
+    font-family: SimHei; 
+    font-size: 16px;
+    letter-spacing: 3px;    
+}
+.bannerActionLeft{
+    border-radius:2px 0px 0 2px ;
+    background-color: #E65348;
+}
+.bannerActionLeft a:link{color: #fff;}
+.bannerActionLeft a:hover{text-decoration: none;}
+.bannerActionLeft a:visited{color: #fff;}
+.bannerActionRight{
+    border-radius:0px 2px 2px 0px ;
+    background-color: #E2E1E1;
+    cursor: pointer;
+
+} 
+.bannerActionRight a:link{color: #000;}
+.bannerActionRight a:hover{text-decoration: none;}
+.bannerActionRight a:visited{color: #000;}
+.sectionDiv{
+/*    border: 1px solid green;*/
+    margin-left: 150px;
+    margin-right: 80px;
+}
+.seconedTitleText{
+    color: #fff;
+    font-family:SimHei;
+    font-size: 32px;
+    padding-top:40px;
+}
+.secondText{
+    color:#b5a3e0;
+    font-family: SimSun;
+    font-size: 16px;
+}
+.thridText{
+    color:#cecc9f;
+    font-family: SimSun;
+    font-size: 16px;   
+    font-weight: bold;
+    
+}
+.fourthText{
+    color:#1e1e1e;
+    font-family: SimSun;
+    font-size: 17px;     
+
+}
+.changeSize{
+    transition: all 0.8s linear 0s;
+}
+
+.bottonStyle{
+    border-radius: 100px 100px 100px 100px;
+    font-weight: 600;
+    transition: background-color 0.25s linear 0s;
+    background-color:#3A89CB;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    text-decoration: none;
+    padding:10px 8px 8px 8px;
+    color: white;
+}
+.bottonStyle:hover{
+    background-color: #f66464;
+    text-decoration: none;
+    color: white;
+}
+.showArea{
+    position:relative;
+/*    height: 300px;*/
+    width: 250px;
+    outline: medium #bbb dotted;
+    display: inline-block;
+    margin:5px 40px 20px 10px;
+}
+.serviceWordsTitle{
+    color:#0b213e;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: #fff dashed medium;
+    margin-left: 18px;
+    margin-right: 18px;
+    
+}
+.serviceWordsTitle a{
+       color:#0b213e;
+       font-family:SimHei;
+    cursor: pointer;
+}
+.serviceWordsTitle a:hover{
+    text-decoration: none;
+}
+.serviceWordsText{
+    padding-left: 5px;
+    padding-right: 5px; 
+   color:#0b213e;
+}
+.serviceBackground{
+    background-color: #3d84de;
+    opacity:0.1;
+    height: 350px;
+    width: 250px;
+}
+.serviceWords{
+    opacity:1; 
+    
+    position: absolute;
+    z-index:10;
+    width: 250px;
+}
+.inlineDisplay{
+    display: inline-block;
+}
+.centerText{
+    text-align: center;
+}
+.topButton{
+    padding-left:25px; padding-right: 25px;
+/*    letter-spacing:3px;*/
+    font-family: 楷体;font-size: 18px;
+}
+.bottonStyle :visited{
+    color: white;
+    text-decoration: none;
+}
+.bottonStyle :link{
+    color: white;
+    text-decoration: none;
+}
+
+#firstWords{
+    width:431px;
+    height: 238px;
+    left: -130px;
+    top: -589px;
+    position:relative;
+    background-image: url('../image/first_piece_words.png');
+}
+
+.companyIntroduction{
+    display: inline-block;
+    margin-left: 60px;
+    margin-right: 50px;
+    position: relative; 
+    color: white;
+
+}
+.companyIntroductTextTitle{
+    font-family: SimSun;
+    font-size: 16px;
+    color: #bfe1c6
+}
+.companyIntroductMainText{
+    color: #bfe1c6;
+    font-family: SimSun;
+}
+.companyIntroductionImage{
+    display:inline-block;
+    cursor: pointer;
+}
+/*    合作伙伴处的css*/
+.postionCss{margin-top: 0;
+            margin-right:400px; 
+            padding-top: 15px;}
+.picCss{
+    text-align: right;
+    padding-right: 40px;
+    margin-top: -45px;
+}
+.blankDiv{
+    height: 48px;
+}
+.blankDivSmall{
+    height: 50px;
+}
+.blankDivNormal{
+    height: 100px;
+}
+.blankDivLarge{
+    height: 150px;
+}
+
+/*.accordionHeight{
+    height: 200px;
+}*/
+.cancelBorder{
+ border:none;   
+}
+.setNoStyle{
+    cursor: default;
+}
+.setNoStyle:hover{
+    text-decoration: none;
+}
+
+.backBottom{
+    color: #FBB4B2;
+    border: #FBB4B2 1px solid;
+    border-top:none;
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    left:43%;        
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.15);
+}
+.backBottom:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.menuBottom{
+     position: absolute;
+     cursor: pointer;
+     width: 103px;
+     text-align: center;
+     color: white;
+     height: 40px;
+     line-height: 40px;
+     bottom: 0px;
+}
+.backTitle{
+    padding-top:40px;
+    font-size: 20px;
+    text-align: center;
+    width: 90%;
+    color: #1c465c;
+    font-family: SimHei;
+    font-size: 26px;
+}
+.productionIntruductionListBox{
+    display: inline-block;
+}
+.productionIntruductionList{
+    
+    margin-right: 40px;
+    width: 172px;
+    height: 174px;
+    cursor: pointer;
+}
+.topText{
+    margin-bottom: 50px;
+    font-size: 14px;
+}
+.anotherPageStyle{
+    margin: 0 auto;
+    width: 500px;
+}
+.teamTitle{
+    position:absolute;
+    color:white; 
+    font-weight:bold;
+}
+.nextButtom{
+    background-image: url('../image/xianghou.png');
+     background-repeat: no-repeat;
+}
+.nextButtom:hover{
+    background-image: url('../image/xianghouActive.png');
+     background-repeat: no-repeat;
+}
+.perButtom{
+    background-image: url('../image/xiangqian.png');
+    background-repeat: no-repeat;
+}
+.perButtom:hover{
+    background-image: url('../image/xiangqianActive.png');
+     background-repeat: no-repeat;
+}
+.firstBlockImg{
+    background-image: url('../image/one.png');
+}
+#thridBlock:hover{
+        background-image: url('../image/oneActive.png');
+}
+/*.firstBlockImgActive{
+
+}*/
+.secondBlockImg{
+    background-image: url('../image/two.png');
+}
+#secondBlock:hover{
+    background-image: url('../image/twoActive.png');
+}
+/*.secondBlockImgActive{
+    
+}*/
+
+#firstBlock:hover{
+    background-image: url('../image/threeActive.png');   
+}
+.thridBlockImg{
+     background-image: url('../image/three.png');   
+}
+/*.thridBlockImgActive{
+     
+}*/
+
+.contactUsDivDisplay{
+    margin-right: 5%;
+    width: 160px;
+    height: 140px;
+    cursor: pointer;
+}
+.contactUsTextsHeight{
+    height: 90px;
+}.contactUsTextsWidth{
+    width: 175px;
+}
+.contactUsTitileText{
+    margin-top: 30px;
+}
+.contactUsMessage{
+    display: none;
+    line-height: 90px;
+    font-size: 14px;
+    font-family: 楷体;
+    text-align: center;
+}

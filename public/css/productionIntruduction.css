@@ -1,0 +1,57 @@
+.productionImg1{
+    background-image: url('../image/productionIntruduction/productBlack1.png')
+}
+.productionImg2{
+    background-image: url('../image/productionIntruduction/productBlack2.png')
+}
+.productionImg3{
+    background-image: url('../image/productionIntruduction/productBlack3.png')
+}
+.productionImg4{
+    background-image: url('../image/productionIntruduction/productBlack4.png')
+}
+.productionImg5{
+    background-image: url('../image/productionIntruduction/productBlack5.png')
+}
+.productionImg6{
+    background-image: url('../image/productionIntruduction/productBlack6.png')
+}
+
+.productionImgActive1{
+    background-image: url('../image/productionIntruduction/productRed1.png')
+}
+.productionImgActive2{
+    background-image: url('../image/productionIntruduction/productRed2.png')
+}
+.productionImgActive3{
+    background-image: url('../image/productionIntruduction/productRed3.png')
+}
+.productionImgActive4{
+    background-image: url('../image/productionIntruduction/productRed4.png')
+}
+.productionImgActive5{
+    background-image: url('../image/productionIntruduction/productRed5.png')
+}
+.productionImgActive6{
+    background-image: url('../image/productionIntruduction/productRed6.png')
+}
+.productionTextStyle{
+     font-family:SimHei;
+     font-size: 16px;
+     line-height: 45px;
+     color:#faf6af;
+}
+.productionTextDiv{
+    margin-left: 50px;margin-right: 50px; 
+}
+
+.productionText{
+    text-align: center;
+    width: 180px;
+    color:#c6e3ef;
+    font-family: sumHei;
+    font-size: 14px;
+    padding-top: 10px;
+    letter-spacing: 2px;
+    
+}
