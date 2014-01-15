@@ -630,7 +630,7 @@
         var winWidth=$(window).width();
         //alert(winWidth);
         $(".topModDivWidthValue").css("width",winWidth+"px");
-        $("#back").css({"width":winWidth+"px","height":winHeight+"px"});
+        $("#back").css({"height":winHeight+"px"});
         // alert(winHeight+":"+winWidth);
         if(winHeight<=750)
         {
@@ -1053,7 +1053,8 @@
                 $("#back").slideToggle("slow",function(){
                     $("#mainText").html("loading......");
                 });
-            
+                $('body').css('overflow','visible');
+                
             });
             //-----------------------------二级页面内容获取ajax--------------------------
             function getAttachHTML(attachUrl){
@@ -1063,9 +1064,12 @@
                         $("#backTextTitle").html($("#productionTitle").val()); 
                     });
                 }
-
+                
+//                 alert( $('body').css('overflow'));
                 $(".backBottom").show();
                 $("#back").slideToggle("slow");
+                $('body').css('overflow','hidden');
+                
             }
             //--------------------------向前向后----------------
                 $(".perButtom").click(function(){
