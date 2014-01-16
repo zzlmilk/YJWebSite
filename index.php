@@ -26,17 +26,17 @@
                 font-weight: bold !important;
             }
 
-            .navbar .nav > li > a {
+            .navbar .nav > li a {
                 color: white;
                 text-shadow: none;
 
             }
             
-            .navbar .nav > li > a:focus{
+            .navbar .nav > li  a:focus{
                 color:white;
                 font-weight: bold;
             }
-            .navbar .nav > li > a:hover{
+            .navbar .nav > li a:hover{
                 color:white;
                 font-weight: bold;
             }
@@ -106,12 +106,22 @@
             .accordionHeight{
                 background-color: #fff;
             }
-
+            .navInnerBlock{
+                position: absolute;
+                height: 100%;
+                background-color: #fff;
+                opacity: 0; 
+                cursor: pointer;
+            }
+            .navInnerBlock:hover{
+                color:white;
+                font-weight: bold;
+            }
         </style>
     </head>
-    <body data-spy="scroll">
+    <body data-spy="scroll" data-offset="30">
         <!-- 页面弹窗 -->
-        <div id="back" style="border-bottom:solid #8BD4F5 5px;display: none;  background-color: #1C465C; position:  fixed; z-index: 3000; overflow-y:scroll">
+        <div id="back" style="width:100%;border-bottom:solid #8BD4F5 5px;display: none;  background-color: #1C465C; position:  fixed; z-index: 3000; overflow-y:scroll">
             <div style="background-color:white; height:80px;border-bottom:solid #8BD4F5 15px; position: relative; width: 100%; ">
                 <div class="backBottom">返回</div>  
                                 <div id="backTextTitle" class="backTitle">
@@ -123,8 +133,8 @@
                 <div class="menuBottom nextButtom" style="right:3%;"></div>
 
             </div>
-
-            <div id="mainText" style="margin-top:20px; margin-bottom:100px;color: #FDF6AE;">
+            <div class="blankDivNormal"></div>
+            <div id="mainText" style="line-height: 30px;margin-top:20px; margin-bottom:100px;color: #FDF6AE;">
                 loading.......
             </div>
 
@@ -136,12 +146,13 @@
 <!--                <span id="scorllVal"></span>-->
                 <div style="float: left; text-align: center; font-size: 20px; width: 75%;padding-top: 7px;">
                     <img src="./public/image/logoTitleText.png"/>
+                    <div id="scorllVal"></div>
                 </div>
                 <div style="display: inline-block;text-align: right;float: left; ">
                     
-                    <div class="bannerAction bannerActionLeft"><a href="#contactUs">联系我们</a></div>
+                    <div class="bannerAction bannerActionLeft"><a style="color:white;cursor: pointer" onclick="gotoWhere(4700)">联系我们</a></div>
                     
-                    <div id="addFavourite" class="bannerAction bannerActionRight"><a href="#a1">返回顶部</a></div>
+                    <div id="addFavourite" class="bannerAction bannerActionRight"><a style="color:black;cursor: pointer" onclick="gotoWhere(650)">返回顶部</a></div>
                 </div>
             </div>
 
@@ -192,7 +203,7 @@
                         <li>
                             <div class="slidePosition">
                                 <div class="topModDivWidthValue" id="hiddenDisplay2" style=" background-color: black; z-index: 55;position: absolute;width: 1168px; height: 750px;"></div>
-                                <div class="topModDivWidthValue" style="overflow: hidden;position:absolute;background-color: #FF453E;width: 1162px; height: 750px;margin-top: 40px;">
+                                <div class="topModDivWidthValue" style="overflow: hidden;position:absolute;background-color: #ea5953;width: 1162px; height: 750px;margin-top: 40px;">
                                     <div style="width: 100%; height:576px;position: absolute; right: 0; bottom: 80px;">
                                          <img src='./public/image/bg1.png' style="width: 100%;height:400px; "/>
                                     </div>
@@ -281,20 +292,22 @@
                     <div id="navBarColor" class="navbar-inner" style="filter:none;background-color: black;background-image: none;border: none;border-radius: 0px;">
                         <ul class="nav" style="width:100%">
                             <li class="navWidth"><a></a></li>
-                            <li class="navWidth active"><a href="#seconed">关于雅捷</a></li>
-                            <li class="navWidth"><a href="#thrid">产品</a></li>
-                            <li class="navWidth"><a href="#fourth">服务</a></li>
+                            <li class="navWidth active" onclick="gotoWhere(650)"><div class="navWidth navInnerBlock"></div><a href="#seconedTitle" >关于雅捷</a></li>
+                            <li class="navWidth" onclick="gotoWhere(1700)"><div class="navWidth navInnerBlock"></div><a href="#thridTitle">产品</a></li>
+                            <li class="navWidth" onclick="gotoWhere(2680)"><div class="navWidth navInnerBlock"></div><a href="#fourthTitle">服务</a></li>
 <!--                            <li class="navWidth"><a href="#fifth">团队</a></li>-->
-                            <li class="navWidth"><a href="#sixth">合作伙伴</a></li>
-                            <li class="navWidth"><a href="#contactUs">加入雅捷</a></li>
+                            <li class="navWidth" onclick="gotoWhere(3950)"><div class="navWidth navInnerBlock"></div><a href="#sixthTitle">合作伙伴</a></li>
+                            <li class="navWidth" onclick="gotoWhere(4700)"><div class="navWidth navInnerBlock"></div><a href="#contactUsTitle">加入雅捷</a></li>
                         </ul>
                     </div>
                 </div>
                 <div style="height:3px;background-color: skyblue "></div>
             </div> 
            <!--            此处开始是企业文化-->
-            <section id="seconed" style="background-color:#161525;height: 800px;">
-                <div class="sectionDiv seconedTitleText">
+            <section id="seconed" style="background-color:#161525;height: 1100px;">
+                 <div id="seconedTitle" style="height:50px;"></div>
+                <div style="height:150px;"></div>
+                <div  class="sectionDiv seconedTitleText">
                     为什么选择雅捷?
                 </div>
                 <div class="blankDiv">
@@ -342,10 +355,12 @@
 
                 </div>
                 <div class="blankDivLarge"></div>
+                 <div id="thridTitle" style="height:50px;"></div>
             </section>
             <!--此处开始是产品介绍-->
             <section id="thrid" class="linerColor" >
-                <div style="height: 100px;"></div>
+                
+                 <div  style="height:150px;"></div>
                 <div class="seconedTitleText sectionDiv">
                     产品
                 </div>
@@ -380,19 +395,18 @@
                         </div>
                     </div>
                 </div>
+                <div id="fourthTitle" style="height:50px;"></div>
                 <div class="blankDivLarge"></div>
+                
             </section>
             <!--            此处是合作伙伴-->
             <section id="fourth" style="background-color: #f1eeed; ">
-                <div class="blankDivSmall">
-                </div>
+                 
+                <div  style="height:150px;"></div>   
                 <div class="seconedTitleText sectionDiv" style="color:#ff453d">服务</div>
                 <div class="blankDivSmall"></div>
                 <div class="fourthText sectionDiv">高效全方面的服务是雅捷核心竞争力的另一个方面，成熟的产品是成功的基石，配套合理的IT服务则是成功的最终体现，过硬的技术和管理流程满足您所有个性化需求。</div>
-                <div class="blankDivNormal"></div>
-                <div class="sectionDiv">
-                    <div ><a class="bottonStyle" style="letter-spacing: 10px;padding-left: 15px;" href="#sixth"> 合作伙伴</a></div>
-                </div>
+
                 <div class="blankDivSmall"></div>
                 <div class="sectionDiv">
                     <div id="lineOne">
@@ -486,12 +500,15 @@
                             <div class="serviceBackground">
                             </div>   
                         </div>
-                    </div>  
+                        <div id="sixthTitle" style="height:50px;"></div>
+                    </div>
                     <div class="blankDivNormal"></div>
+                    
             </section>
 
-            <section id="sixth" style="background-color: #233773;height: 600px">
-                <div class="blankDivSmall"></div>
+            <section id="sixth" style="background-color: #233773;height: 800px">
+                 
+            <div  style="height:180px;"></div>   
                 <div class=" seconedTitleText postionCss" style="position: absolute; left:11%">合作伙伴</div>
                 <div class="sectionDiv" style="margin-top: 80px; display:inline-block;">
                     <div class=" " style="width: 400px">
@@ -545,9 +562,13 @@
                 <div style=" height:240px; margin-top: 150px; width:800px;position: absolute; display: inline-block; right: 0;">
                     <img src="./public/image/hezuo.png">
                 </div>
-            </section>
-            <section id="contactUs" class=""  style="background-color: #DBD9DC; ">
+                <div id="contactUsTitle" style="height:50px;"></div>
                 <div class="blankDivNormal"></div>
+            </section>
+            
+            <section id="contactUs" class=""  style="background-color: #DBD9DC; ">
+                
+                <div  style="height:200px;"></div>  
                 <div class="sectionDiv contactFont">
                     <div style="font-size: 46px;font-family: SimHei;">联系我们</div>
                     <div class="blankDivSmall"></div>
@@ -555,7 +576,7 @@
                         <div class="inlineDisplay contactUsDivDisplay">
                             <div class="contactUsTextsHeight contactUsTextsWidth">
                             <div class="centerText contactUsImg contactUsTextsHeight"><img src="./public/image/tel.png"></div>
-                            <div class="contactUsMessage contactUsTextsHeight">+86 21 31263800</div>
+                            <div class="contactUsMessage contactUsTextsHeight">+86 021 31263800</div>
                             </div>
                            <div class="centerText contactUsTitileText contactUsTextsWidth"><img src="./public/image/telText.png"/></div>  
                         </div>
@@ -576,7 +597,7 @@
                         <div class="inlineDisplay contactUsDivDisplay">
                             <div class="contactUsTextsHeight contactUsTextsWidth">
                              <div class="centerText contactUsImg contactUsTextsHeight"><img src="./public/image/fax.png"></div>
-                             <div class="contactUsMessage contactUsTextsHeight">+86 21 31263800</div>
+                             <div class="contactUsMessage contactUsTextsHeight">+86 021 31263800</div>
                              </div>
                             <div class="centerText contactUsTitileText contactUsTextsWidth"><img src="./public/image/faxText.png"/></div>  
                             
@@ -596,16 +617,13 @@
                 <div class="centerText" style="margin-bottom:  60px;">
                         <img src="./public/image/logo00.png" style="width: 250px;height: 90px;margin-left: -60px;">
                 </div>
-                <div style="color: #452348;text-align: right;font-family: 楷体; border-bottom: 2px #63746b solid; border-top: 2px #63746b solid; padding: 7px 50px 7px 0  ;">
-                        <span>关于我们</span>
-                        <span>工作机会</span>
-                        <span>合作伙伴</span>
-                        <span>联系我们</span>
+                <div style=" text-align: right;font-family: 楷体; border-bottom: 2px #63746b solid; border-top: 2px #63746b solid; padding: 7px 30px 7px 0  ;">
+                    <div>版权所有：2010-<?php echo date("Y")?> 雅捷信息技术（上海）有限公司 </div>
                 </div>
-                <div class="blankDivSmall"></div>
-                <div class="centerText">
-                    版权所有：2010-<?php echo date("Y")?> 雅捷信息技术（上海）有限公司
-                </div>
+                <div class="blankDiv"></div>
+                
+                    
+               
             </section>
         </div>
     </body>
@@ -622,6 +640,7 @@
 <!--    <script  type="text/javascript" src="./public/smooth.pack.js"></script>-->
     <script>
         // $("#aaa").pin();
+        $(document).scrollTop(0);
         $("#bbb").pin({
             containerSelector: "#b1"
         });
@@ -641,12 +660,19 @@
         }
        
         var divHeight=$(".topMod ul li").height();
-
+        
         // alert(divHeight);
-            scollHeightChange(divHeight,60);
+//            scollHeightChange(divHeight,60);
+
+           
         $(document).scroll(function(){
-            $("#scorllVal").html($(document).scrollTop());
-            
+//            $("#scorllVal").html($(document).scrollTop());
+//           if ($(document).scrollTop()>"500"&&$(document).scrollTop()<="510"){
+//              $(document).scrollTop(625);
+//           }
+//            if ($(document).scrollTop()>="600"&&$(document).scrollTop()<"625"){
+//              $(document).scrollTop(500);
+//           }
             scollHeightChange(divHeight,60);
         });
         moveSecondDiv();
@@ -949,10 +975,22 @@
                 //-------------------改变topmod宽度--------------------------
                 $(".topMod").width(nowWinWidth+"px");
                 //----------------------修改弹窗大小----------------
-                 $("#back").css({"width":nowWinWidth+"px","height":winHeight+"px"});
+                 $("#back").css({"height":winHeight+"px"});
                  //修改导航栏状态
                  var divHeight=$(".topMod ul li").height();
                  scollHeightChange(divHeight,60);
+               //-------------------调整button位置---------------------
+                 $(".dots").css('left',(nowWinWidth-300)+"px");
+                 $(".dots").css('top',(winHeight-100)+"px");
+                 var dotsPostionLeft= $(".dots").css('left');
+                 var dotsPostionTop= $(".dots").css('Top');
+                 dotsPostionLeft= parseInt(dotsPostionLeft);
+                 dotsPostionTop=parseInt(dotsPostionTop);
+                 var topVer=dotsPostionTop-10+"px";
+                 // alert(dotsPostion);
+                 var leftVer=dotsPostionLeft+95+"px";
+                 $(".turnButton").css('left', leftVer); 
+                 $(".turnButton").css('top', topVer); 
             });
             
             //---------------resizeEnd----------------------------
@@ -1052,7 +1090,10 @@
                 $(".backBottom").toggle();
                 $("#back").slideToggle("slow",function(){
                     $("#mainText").html("loading......");
+                     $(".perButtom").show();
+                     $(".nextButtom").show();
                 });
+               
                 $('body').css('overflow','visible');
                 
             });
@@ -1073,6 +1114,8 @@
             }
             //--------------------------向前向后----------------
                 $(".perButtom").click(function(){
+                     $(".perButtom").show();
+                     $(".nextButtom").show();
                      if($("#perUrl").val()==""){
                          alert("这已经是第一页了");
                      }else{
@@ -1084,6 +1127,8 @@
                      
                 });
                 $(".nextButtom").click(function(){
+                     $(".perButtom").show();
+                     $(".nextButtom").show();
                   if($("#NextUrl").val()==''){
                        alert("这已经是最后一页了");
                   }
@@ -1150,7 +1195,10 @@
     $("#closeMessage").click(function(){
         $("#browserVerpPrompt").css("display","none");
     })
-
+//----------------位置跳跃（暂时性解决方案）-----------------
+    function gotoWhere(whereNumber){
+        $(document).scrollTop(whereNumber);
+    }
             
     </script>
 </html>

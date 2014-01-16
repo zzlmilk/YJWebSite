@@ -72,6 +72,7 @@ root {
     color:#b5a3e0;
     font-family: SimSun;
     font-size: 16px;
+    line-height: 30px;
 }
 .thridText{
     color:#cecc9f;
@@ -196,6 +197,7 @@ root {
 .companyIntroductMainText{
     color: #bfe1c6;
     font-family: SimSun;
+    line-height: 20px;
 }
 .companyIntroductionImage{
     display:inline-block;

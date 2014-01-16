@@ -31,3 +31,6 @@
 <input type="hidden" value="产品技术支持" id="productionTitle">
             <input type="hidden" id="perUrl" value="">
             <input type="hidden" id="NextUrl" value="./public/ajaxPage/MaintenanceService.php">
+            <script>
+                $(".perButtom").hide();
+            </script>

@@ -27,3 +27,6 @@
 <input type="hidden" value="银行财务管理系统" id="productionTitle">
             <input type="hidden" id="perUrl" value="">
             <input type="hidden" id="NextUrl" value="./public/ajaxPage/bankCredit.php">
+            <script>
+                $(".perButtom").hide();
+            </script>

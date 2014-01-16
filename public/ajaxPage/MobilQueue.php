@@ -22,3 +22,6 @@
 <input type="hidden" value="移动排队系统" id="productionTitle">
             <input type="hidden" id="perUrl" value="./public/ajaxPage/CustomerInformationManagement.php">
             <input type="hidden" id="NextUrl" value="">
+            <script>
+                $(".nextButtom").hide();
+            </script>
