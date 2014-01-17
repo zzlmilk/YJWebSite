@@ -150,7 +150,7 @@
                 </div>
                 <div style="display: inline-block;text-align: right;float: left; ">
                     
-                    <div class="bannerAction bannerActionLeft"><a style="color:white;cursor: pointer" onclick="gotoWhere(4700)">联系我们</a></div>
+                    <div class="bannerAction bannerActionLeft"><a href="./yajie/index.html" style="color:white;cursor: pointer" >返回旧版</a></div>
                     
                     <div id="addFavourite" class="bannerAction bannerActionRight"><a style="color:black;cursor: pointer" onclick="gotoWhere(650)">返回顶部</a></div>
                 </div>
@@ -618,7 +618,7 @@
                         <img src="./public/image/logo00.png" style="width: 250px;height: 90px;margin-left: -60px;">
                 </div>
                 <div style=" text-align: right;font-family: 楷体; border-bottom: 2px #63746b solid; border-top: 2px #63746b solid; padding: 7px 30px 7px 0  ;">
-                    <div>版权所有：2010-<?php echo date("Y")?> 雅捷信息技术（上海）有限公司 </div>
+                    <div>版权所有：2010-2014 雅捷信息技术（上海）有限公司 </div>
                 </div>
                 <div class="blankDiv"></div>
                 
